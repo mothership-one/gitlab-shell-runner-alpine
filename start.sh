@@ -1,4 +1,4 @@
-cf push --no-start --docker-image gitlab/gitlab-runner:alpine
+cf push --no-start --docker-image mothershipone/gitlab-runner:alpine
 
 cf set-env gitlab-runner-cf CI_SERVER_URL "https://gitlab.com/"
 cf set-env gitlab-runner-cf RUNNER_NAME "gitlab-runner-cf-sandbox"
